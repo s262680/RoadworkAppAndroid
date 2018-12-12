@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student Name: Kieran Chi Io Song
+Student ID: S1423416 -->
+
+<ViewSwitcher xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/viewSwitch"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/low_res_bg_image3">
+
+    <ViewFlipper
+        android:id="@+id/currentFlip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Current Incidents" />
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/currentSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:hint="Type in the keywords"
+                    android:text=""
+
+                    />
+
+                <Button
+                    android:id="@+id/currentSearchButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/search_color_button"
+                    android:text="Search" />
+
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView1"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@drawable/top_bottom_border"></ListView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/switchButton1"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/switch_page_color_button"
+                    android:text="Check Planned Roadworks" />
+                />
+
+                <Button
+                    android:id="@+id/refreshButton1"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/refresh_color_button"
+                    android:text="Refresh" />
+
+                />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+
+                <Button
+                    android:id="@+id/backFromCurrentDescriptionButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:background="@drawable/back_color_button"
+                    android:text="Back" />
+
+                <TextView
+                    android:id="@+id/currentDescriptionViewTitle"
+                    style="@style/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:text="Title"
+                    android:textSize="20dip"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/currentDescriptionView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="temp"
+                    android:textSize="18dip" />
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/gap1"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="" />
+
+            <Button
+                android:id="@+id/toMapFromCurrentDescriptionButton"
+                style="@style/button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/map_color_button"
+                android:text="Check location in map" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+
+                <Button
+                    android:id="@+id/backFromCurrentMapButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:background="@drawable/back_color_button"
+                    android:text="Back" />
+
+                <TextView
+                    android:id="@+id/currentMapViewTitle"
+                    style="@style/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:text="Title"
+                    android:textSize="20dip"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map1"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                tools:context=" mpdproject.gcu.me.org.assignmenttest1.MainActivity" />
+        </LinearLayout>
+    </ViewFlipper>
+
+    <ViewFlipper
+        android:id="@+id/plannedFlip"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:text="Planned Roadworks" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <EditText
+                    android:id="@+id/plannedSearch"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:hint="Type in the keywords"
+                    android:text=""
+
+                    />
+
+                <Button
+                    android:id="@+id/plannedSearchButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/search_color_button"
+                    android:text="Search" />
+
+
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listView2"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:background="@drawable/top_bottom_border"></ListView>
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <Button
+                    android:id="@+id/switchButton2"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5"
+                    android:background="@drawable/switch_page_color_button"
+                    android:text="Check Current Roadworks" />
+
+
+                <Button
+                    android:id="@+id/refreshButton2"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:background="@drawable/refresh_color_button"
+                    android:text="Refresh" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+
+                <Button
+                    android:id="@+id/backFromPlannedDescriptionButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:background="@drawable/back_color_button"
+                    android:text="Back" />
+
+                <TextView
+                    android:id="@+id/plannedDescriptionViewTitle"
+                    style="@style/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:text="Title"
+                    android:textSize="20dip"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="6"
+                android:background="@drawable/border">
+
+                <TextView
+                    android:id="@+id/plannedDescriptionView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:text="temp"
+                    android:textSize="18dip" />
+            </ScrollView>
+
+            <TextView
+                android:id="@+id/gap2"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:text="" />
+
+            <Button
+                android:id="@+id/toMapFromPlannedDescriptionButton"
+                style="@style/button"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="@drawable/map_color_button"
+                android:text="Check location in map" />
+        </LinearLayout>
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2.5">
+
+                <Button
+                    android:id="@+id/backFromPlannedMapButton"
+                    style="@style/button"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_weight="2"
+                    android:background="@drawable/back_color_button"
+                    android:text="Back" />
+
+                <TextView
+                    android:id="@+id/plannedMapViewTitle"
+                    style="@style/title"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_weight="5"
+                    android:text="Title"
+                    android:textSize="20dip"
+                    android:textStyle="bold|italic" />
+            </LinearLayout>
+
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:map="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/map2"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7.5"
+                tools:context=" mpdproject.gcu.me.org.assignmenttest1.MainActivity" />
+
+        </LinearLayout>
+    </ViewFlipper>
+
+
+</ViewSwitcher>

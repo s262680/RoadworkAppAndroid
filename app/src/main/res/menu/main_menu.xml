@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student Name: Kieran Chi Io Song
+Student ID: S1423416 -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bg1"
+        android:title="Background 1"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/bg2"
+        android:title="Background 2"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mapType1"
+        android:title="MapType:Normal"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mapType2"
+        android:title="MapType:Terrain"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mapType3"
+        android:title="MapType:Hybrid"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/mapType4"
+        android:title="MapType:Satellite"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/about"
+        android:title="About"
+        app:showAsAction="never" />
+</menu>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Student Name: Kieran Chi Io Song
+Student ID: S1423416 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:state_pressed="true">
+        <shape>
+            <solid
+                android:color="@color/Silver"/>
+            <stroke
+                android:width="1dip"
+                android:color="@color/halfOpacityBlack"	/>
+            <corners
+                android:radius="2dip"/>
+            <padding
+                android:left="10dip"
+                android:right="10dip"
+                android:top="10dip"
+                android:bottom="10dip"/>
+
+        </shape>
+    </item>
+    <item>
+        <shape>
+            <gradient
+                android:startColor="@color/Silver"
+                android:endColor="@color/Gray"
+                android:angle="270"/>
+            <stroke
+                android:width="1dip"
+                android:color="@color/halfOpacityBlack"/>
+            <corners
+                android:radius="2dip"/>
+            <padding
+                android:left="10dip"
+                android:right="10dip"
+                android:top="10dip"
+                android:bottom="10dip"/>
+
+        </shape>
+    </item>
+</selector>
